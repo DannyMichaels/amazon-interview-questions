@@ -37,7 +37,6 @@ const onComponentDidMount = () => {
 };
 
 // my love for react shows here with that naming, lol.
-
 const onComponentDidUpdate = () => {
   fetchCurrentQuestion();
 
@@ -54,8 +53,6 @@ const onComponentDidUpdate = () => {
   prevQuestionBtn.classList.remove('disabled');
 };
 
-onComponentDidMount();
-
 prevQuestionBtn.addEventListener('click', () => {
   if (currentQuestionNum === 0) return;
 
@@ -68,3 +65,5 @@ nextQuestionBtn.addEventListener('click', () => {
   currentQuestionNum++;
   onComponentDidUpdate();
 });
+
+onComponentDidMount();
