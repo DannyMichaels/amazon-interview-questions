@@ -17,12 +17,13 @@ const questions = [
   },
 ];
 
-let currentQuestionHTML = document.getElementById('current-question');
 let currentQuestionNum = 0;
 const finalQuestionNum = questions.length - 1;
 
 const prevQuestionBtn = document.getElementById('prev-btn');
 const nextQuestionBtn = document.getElementById('next-btn');
+
+let currentQuestionHTML = document.getElementById('current-question');
 
 const fetchCurrentQuestion = () => {
   // it'll only get the pair from the index that matches currentQuestionNum
