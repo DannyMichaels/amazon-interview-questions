@@ -1,4 +1,3 @@
-This question was in the junior front-end developer Amazon interview.
 
 # the challenge:
 
